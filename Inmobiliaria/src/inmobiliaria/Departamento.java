@@ -15,7 +15,7 @@ public class Departamento extends Propiedad{
     
     @Override
     public double precioAlquiler(){
-        double precio = 0;
+        double precio;
         precio=this.precioBase+precioExpensas;
         if(this.isUsoComercial){
             precio+=500;

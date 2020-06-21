@@ -5,6 +5,10 @@ package inmobiliaria;
 public class Casa extends Propiedad{
     private boolean garaje;
     
+    public boolean getIsGarage(){
+        return garaje;
+    }
+    
     public Casa(boolean garaje,String direccion, int cantHabitaciones, double precioBase, 
             boolean isUsoComercial, int cantInquilinos){
         

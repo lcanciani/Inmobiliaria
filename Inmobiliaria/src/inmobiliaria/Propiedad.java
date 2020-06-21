@@ -14,6 +14,12 @@ public abstract class Propiedad {
         return cantInquilinos;
     }
     
+    public int getCantHabitaciones(){
+        return cantHabitaciones;
+    }
+    
+   
+    
     public Propiedad (String direccion, int cantHabitaciones, double precioBase, 
             boolean isUsoComercial, int cantInquilinos){
         this.direccion = direccion;

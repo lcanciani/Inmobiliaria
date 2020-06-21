@@ -49,4 +49,15 @@ public class Inmobiliaria {
         
     return montoPromedio;
 }
+    public int masTresHabitacionesGaraje(){
+        int cant = 0;
+        for (Propiedad p : propiedades) {
+            if(p instanceof Casa && p.getCantHabitaciones()>2){
+                Casa c = (Casa)p;
+                if(c.getIsGarage())
+                    cant++;
+            }
+        }
+        return cant;
+    }
 }
