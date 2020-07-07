@@ -34,6 +34,8 @@ public class Inmobiliaria {
         propiedades.add(p);
     }
     
+    
+    
     public double dosInquilinos(){
         double montoPromedio = 0;
         int cantProp = 0;
@@ -59,5 +61,13 @@ public class Inmobiliaria {
             }
         }
         return cant;
+    }
+    
+    public String[] stringProp(){
+        String[] prop1 = new String[propiedades.size()];
+        for (int i = 0; i < propiedades.size(); i++) {
+            prop1[i]=propiedades.get(i).toString();
+        }
+        return prop1;
     }
 }
